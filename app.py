@@ -28,10 +28,10 @@ print()
 
 # Liste todos os alunos matriculados na disciplina
 
-valores = alunos_lb.values()
+alunos = alunos_lb.values()
 
 print('Alunos matriculados na disciplina Laboratório de Programação:')
-for aluno in valores:
+for aluno in alunos:
     print(aluno)
     
 print()
@@ -39,7 +39,7 @@ print()
 # Liste apenas os nomes dos alunos matriculados
 
 print('Nome dos alunos matriculados na disciplina Laboratório de Programação')
-for nome in valores:
+for nome in alunos:
     print(nome[0])
 
 print()    
@@ -47,14 +47,14 @@ print()
 # Liste os nomes dos alunos com suas respectivas notas
 
 print('Alunos com suas respectivas notas:')
-for nome, notas in valores:
+for nome, notas in alunos:
     print(f'Nome: {nome}, Notas: {notas}')
 
 print()
 
 # Liste os nomes dos alunos, suas notas e a média final
 
-for nome, notas in valores:
+for nome, notas in alunos:
     soma_notas = 0
     media_final = 0
     quant_notas = 0
@@ -71,7 +71,7 @@ print()
 
 # Calcule a média aritmética geral da turma
 
-for nome, notas in valores:
+for nome, notas in alunos:
     soma_notas = 0
     quant_notas = 0
     soma_total_notas = 0
