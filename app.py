@@ -38,7 +38,7 @@ print()
 
 # Liste apenas os nomes dos alunos matriculados
 
-print('Nome dos alunos matriculados na disciplina Laboratório de Programação')
+print('Nome dos alunos matriculados na disciplina Laboratório de Programação:')
 for nome in alunos:
     print(nome[0])
 
@@ -85,9 +85,6 @@ for nome, notas in alunos:
     quant_total_notas += quant_notas
 
 media_geral = soma_total_notas / quant_total_notas
-print(f'Média Geral da turma: {media_geral}')
+print(f'Média Geral da turma de Laboratório de Programação: {media_geral}')
 
 print()
-
-
-
