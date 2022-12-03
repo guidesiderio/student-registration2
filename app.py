@@ -57,13 +57,37 @@ print()
 for nome, notas in valores:
     soma_notas = 0
     media_final = 0
+    quant_notas = 0
 
     for nota in notas:
         soma_notas += nota
+        quant_notas += 1
 
-    media_final = soma_notas / 4
+    media_final = soma_notas / quant_notas
 
     print(f'Nome: {nome}, Notas: {notas}, Média Final: {media_final}')        
 
-print()    
+print()   
+
+# Calcule a média aritmética geral da turma
+
+for nome, notas in valores:
+    soma_notas = 0
+    quant_notas = 0
+    soma_total_notas = 0
+    quant_total_notas = 0
+
+    for nota in notas:
+        soma_notas += nota
+        quant_notas += 1
+
+    soma_total_notas += soma_notas
+    quant_total_notas += quant_notas
+
+media_geral = soma_total_notas / quant_total_notas
+print(f'Média Geral da turma: {media_geral}')
+
+print()
+
+
 
