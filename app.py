@@ -16,4 +16,10 @@ alunos_lb = {
     'matricula3': ('aluno3', [9, 8, 6, 7])
 }
 
+# Liste todas as matrículas dos alunos matriculados na disciplina
 
+chaves = alunos_lb.keys()
+
+print('Matrículas da disciplina Laboratório de Programação:')
+for chave in chaves:
+    print(chave)
