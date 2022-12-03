@@ -23,3 +23,13 @@ chaves = alunos_lb.keys()
 print('Matrículas da disciplina Laboratório de Programação:')
 for chave in chaves:
     print(chave)
+
+
+# Liste todos os alunos matriculados na disciplina
+
+valores = alunos_lb.values()
+
+print('Alunos matriculados na disciplina Laboratório de Programação:')
+for valor in valores:
+    print(valor)
+    
