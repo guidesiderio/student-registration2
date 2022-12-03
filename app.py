@@ -24,6 +24,7 @@ print('Matrículas da disciplina Laboratório de Programação:')
 for chave in chaves:
     print(chave)
 
+print()
 
 # Liste todos os alunos matriculados na disciplina
 
@@ -33,3 +34,13 @@ print('Alunos matriculados na disciplina Laboratório de Programação:')
 for valor in valores:
     print(valor)
     
+print()
+
+# Liste apenas os nomes dos alunos matriculados
+
+print('Nome dos alubos matriculados na disciplina Laboratório de Programação')
+for valor in valores:
+    print(valor[0])
+
+print()    
+
