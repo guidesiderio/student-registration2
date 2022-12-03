@@ -52,3 +52,18 @@ for nome, notas in valores:
 
 print()
 
+# Liste os nomes dos alunos, suas notas e a média final
+
+for nome, notas in valores:
+    soma_notas = 0
+    media_final = 0
+
+    for nota in notas:
+        soma_notas += nota
+
+    media_final = soma_notas / 4
+
+    print(f'Nome: {nome}, Notas: {notas}, Média Final: {media_final}')        
+
+print()    
+
