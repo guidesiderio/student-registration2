@@ -18,11 +18,11 @@ alunos_lb = {
 
 # Liste todas as matrículas dos alunos matriculados na disciplina
 
-chaves = alunos_lb.keys()
+matriculas = alunos_lb.keys()
 
 print('Matrículas da disciplina Laboratório de Programação:')
-for chave in chaves:
-    print(chave)
+for matricula in matriculas:
+    print(matricula)
 
 print()
 
@@ -31,16 +31,24 @@ print()
 valores = alunos_lb.values()
 
 print('Alunos matriculados na disciplina Laboratório de Programação:')
-for valor in valores:
-    print(valor)
+for aluno in valores:
+    print(aluno)
     
 print()
 
 # Liste apenas os nomes dos alunos matriculados
 
-print('Nome dos alubos matriculados na disciplina Laboratório de Programação')
-for valor in valores:
-    print(valor[0])
+print('Nome dos alunos matriculados na disciplina Laboratório de Programação')
+for nome in valores:
+    print(nome[0])
 
 print()    
+
+# Liste os nomes dos alunos com suas respectivas notas
+
+print('Alunos com suas respectivas notas:')
+for nome, notas in valores:
+    print(f'Nome: {nome}, Notas: {notas}')
+
+print()
 
